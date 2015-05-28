@@ -4,8 +4,8 @@
   }
 
   var Snake = SnakeGame.Snake = function() {
-    this.dir = "N";
-    this.pos = [5,5];
+    this.dir = "S";
+    this.pos = [0,5];
     this.segments = [];
     this.snakeLength = 0;
     this.gameOver = false;
