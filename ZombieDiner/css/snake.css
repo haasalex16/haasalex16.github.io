@@ -1,0 +1,123 @@
+ul, li, header, html, body, figure, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+body {
+  /*background: #FFDA91;*/
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Audiowide', cursive;
+  height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+
+ul:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+}
+
+header {
+  margin: auto;
+  text-align: center;
+  font-size: 36px;
+}
+
+.container {
+  margin: auto;
+  width: 600px;
+}
+
+.snake, .snake-head, .apple {
+  background-image: url('zombie-sprite.jpg');
+  background-size: 250px 160px;
+  background-repeat: no-repeat;
+}
+
+.snake {
+  background-position: -20px -10px;
+}
+
+.left {
+  background-position: -90px -90px;
+}
+
+.down {
+  background-position: -90px -10px;
+}
+
+.right {
+  background-position: -20px -10px;
+}
+
+.up {
+  background-position: -155px -10px;
+}
+
+.apple {
+  background-position: -155px -90px;
+}
+
+.game-board {
+  margin: 10px 0 ;
+  position: relative;
+  float:left;
+  background: #343537;
+}
+
+.retry {
+  position: absolute;
+  color: black;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: #33ed25;
+  padding: 15px;
+  font-size: 28px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.score {
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  background: #BBBBBB;
+}
+
+.scores {
+  text-align: center;
+}
+.score-list-item {
+  float: none;
+  height: auto;
+  width: auto;
+  text-align: center;
+  border: none;
+}
