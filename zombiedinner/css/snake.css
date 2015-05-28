@@ -6,7 +6,6 @@ ul, li, header, html, body, figure, section {
 }
 
 body {
-  /*background: #FFDA91;*/
   background-image: url('background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,7 +49,7 @@ header {
 
 .container {
   margin: auto;
-  width: 600px;
+  width: 800px;
 }
 
 .snake, .snake-head, .apple {
@@ -59,12 +58,12 @@ header {
   background-repeat: no-repeat;
 }
 
-/*.snake {
-  background-position: -20px -10px;
-}*/
-
 .dead {
   background-position: -20px -90px;
+}
+
+.hide {
+  background: #343537;
 }
 
 .left {

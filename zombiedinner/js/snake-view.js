@@ -71,7 +71,12 @@
     var $li = $($ul.find('li').get(pos[1]));
     $li.addClass('snake-head');
     if (over) {
-      $li.addClass('dead');
+      if (pos[1] < 0 || pos[0] < 0) {
+        $li.addClass('hide');
+      } else {
+        $li.addClass('dead');
+      }
+
     } else {
       if (dir === "N") {
         $li.addClass('up');
@@ -110,10 +115,10 @@
   }
 
   View.prototype.handleKeyEvent = function (keyCode) {
-    var a = 37; //97
-    var s = 40; //115
-    var d = 39; // 100
-    var w = 38; // 119
+    var a = 37;
+    var s = 40;
+    var d = 39;
+    var w = 38;
     var dir;
     switch (keyCode) {
       case a:

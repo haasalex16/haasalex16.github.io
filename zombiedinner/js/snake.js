@@ -38,7 +38,7 @@
     if (this.pos[0] < 0 || this.pos[0] == 10) {
       return true;
     }
-    if (this.pos[1] < 0 || this.pos[1] == 10) {
+    if (this.pos[1] < 0 || this.pos[1] == 12) {
       return true;
     }
     return false;
@@ -97,9 +97,9 @@
 
   Board.prototype.addApple = function() {
     if (!this.apple) {
-      var apple = [Math.floor(Math.random()*10), Math.floor(Math.random()*10)]
+      var apple = [Math.floor(Math.random()*10), Math.floor(Math.random()*12)]
       while(equals(this.snake.pos, apple) || this.snake.intersect(apple) ) {
-        apple = [Math.floor(Math.random()*10), Math.floor(Math.random()*10)]
+        apple = [Math.floor(Math.random()*10), Math.floor(Math.random()*12)]
       }
       this.apple = apple;
     }
@@ -122,7 +122,7 @@
 
   Board.prototype.createBoard = function () {
     for(var i = 0; i < 10; i++) {
-      this.board.push(new Array(10));
+      this.board.push(new Array(12));
     }
   }
 
