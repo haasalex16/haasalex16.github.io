@@ -59,8 +59,12 @@ header {
   background-repeat: no-repeat;
 }
 
-.snake {
+/*.snake {
   background-position: -20px -10px;
+}*/
+
+.dead {
+  background-position: -20px -90px;
 }
 
 .left {
