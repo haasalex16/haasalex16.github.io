@@ -93,7 +93,8 @@ header {
   background: #343537;
 }
 
-.retry {
+.retry,
+.pause {
   position: absolute;
   color: black;
   top: 50%;

@@ -9,8 +9,9 @@
     this.eventBinder();
     this.game = setInterval(this.step.bind(this), 200);
     this.interval = 0;
-    this.scores = []
-    this.bestScore = 0
+    this.scores = [];
+    this.bestScore = 0;
+    this.paused = false;
   }
 
   View.prototype.eventBinder = function () {
@@ -119,6 +120,7 @@
     var s = 40;
     var d = 39;
     var w = 38;
+    var space = 32
     var dir;
     switch (keyCode) {
       case a:
@@ -133,6 +135,15 @@
       case w:
         dir = "N";
         break;
+      case space:
+        if (this.paused) {
+          this.resume();
+          this.paused = false;
+        } else {
+          this.pause();
+          this.paused = true;
+        }
+        break;
     }
     if (!this.board.snake.isOpposite(dir) && !this.board.snake.turn) {
       this.board.snake.dir = dir;
@@ -140,6 +151,15 @@
     }
   };
 
+  View.prototype.pause = function () {
+    this.$el.append("<section class='pause'>Paused</section>");
+    clearInterval(this.game);
+  };
+
+  View.prototype.resume = function () {
+    $(".pause").remove();
+    this.game = setInterval(this.step.bind(this), 200);
+  };
 
 
 })();
