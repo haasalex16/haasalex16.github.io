@@ -145,7 +145,7 @@
         }
         break;
     }
-    if (!this.board.snake.isOpposite(dir) && !this.board.snake.turn) {
+    if (!this.board.snake.isOpposite(dir) && !this.board.snake.turn && !this.paused) {
       this.board.snake.dir = dir;
       this.board.snake.turn = true
     }
