@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+button {
+  height: 38px;
+  font-size: 18px;
+  border: none;
+  color: whitesmoke;
+  background-color: forestgreen;
+  cursor: pointer;
+}
+button:active {
+  box-shadow: none;
+}
+.extra {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.output-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 8px;
+  align-items: center;
+  width: 472px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.form-grid input {
+  height: 35px;
+  font-size: 20px;
+}
+
+.full-row {
+  width: 100%;
+  grid-column: 1 / -1;
+
+}
+
+#nft-label {
+  height: 472px;
+  width: 472px;
+  border: 4px solid black;
+  padding: 16px;
+  text-align: center;
+  font-family: monospace;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.info-box {
+  height: 75px;
+  width: 75px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.info-p {
+  margin: 0px;
+  margin-top: 8px;
+}
+
+.rank-number {
+  font-size: 18px;
+}
+
+.info-name {
+  font-family: 'Poppins', sans-serif;
+  margin: 16px 0;
+}
+
+.trait-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.trait-item {
+  border-style: double;
+  padding: 4px;
+  min-width: 100px;
+}
+
+.trait-type {
+  margin: 0;
+  font-size: 10px;
+}
+
+.trait-count {
+  margin: 0;
+  font-size: 10px;
+}
+
+.trait-value {
+  margin: 0;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.description {
+  white-space: break-spaces;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
