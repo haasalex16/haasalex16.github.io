@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/nft-label-maker/static/css/main.4d2d5159.css",
-    "main.js": "/nft-label-maker/static/js/main.cbb280a8.js",
-    "static/js/787.df8dbe8a.chunk.js": "/nft-label-maker/static/js/787.df8dbe8a.chunk.js",
-    "static/media/ObGem.gif": "/nft-label-maker/static/media/ObGem.15621f119d496b1d4396.gif",
-    "static/media/Vandal.gif": "/nft-label-maker/static/media/Vandal.f19c510c63249dff480a.gif",
-    "static/media/CF.gif": "/nft-label-maker/static/media/CF.6d053e6580c8c45bcf4b.gif",
-    "index.html": "/nft-label-maker/index.html",
-    "main.4d2d5159.css.map": "/nft-label-maker/static/css/main.4d2d5159.css.map",
-    "main.cbb280a8.js.map": "/nft-label-maker/static/js/main.cbb280a8.js.map",
-    "787.df8dbe8a.chunk.js.map": "/nft-label-maker/static/js/787.df8dbe8a.chunk.js.map"
+    "main.css": "/haasalex16.github.io/static/css/main.4d2d5159.css",
+    "main.js": "/haasalex16.github.io/static/js/main.c4c8c208.js",
+    "static/js/787.df8dbe8a.chunk.js": "/haasalex16.github.io/static/js/787.df8dbe8a.chunk.js",
+    "static/media/ObGem.gif": "/haasalex16.github.io/static/media/ObGem.15621f119d496b1d4396.gif",
+    "static/media/Vandal.gif": "/haasalex16.github.io/static/media/Vandal.f19c510c63249dff480a.gif",
+    "static/media/CF.gif": "/haasalex16.github.io/static/media/CF.6d053e6580c8c45bcf4b.gif",
+    "index.html": "/haasalex16.github.io/index.html",
+    "main.4d2d5159.css.map": "/haasalex16.github.io/static/css/main.4d2d5159.css.map",
+    "main.c4c8c208.js.map": "/haasalex16.github.io/static/js/main.c4c8c208.js.map",
+    "787.df8dbe8a.chunk.js.map": "/haasalex16.github.io/static/js/787.df8dbe8a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4d2d5159.css",
-    "static/js/main.cbb280a8.js"
+    "static/js/main.c4c8c208.js"
   ]
 }
